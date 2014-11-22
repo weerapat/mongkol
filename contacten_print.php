@@ -93,8 +93,8 @@ class PDF extends tFPDF {
     $this->SetFontSize($defaultsize);
     $x = $this->GetX(); $y = $this->GetY(); // Remember position
 
-    $this->Cell(20, $lh, $space . "", 0, 0, L);
-    $this->SetFontSize(16); $this->Cell(90, $lh, "     " . cuName($customer["cu_type"], $customer["cu_name"]), 0, 0, L); $this->SetFontSize($defaultsize);
+    $this->Cell(17, $lh, $space . "", 0, 0, L);
+    $this->SetFontSize(16); $this->Cell(93, $lh, "     " . cuName($customer["cu_type"], $customer["cu_name"]), 0, 0, L); $this->SetFontSize($defaultsize);
     $x = $this->GetX(); $y = $this->GetY(); // Remember position
 
     $this->Cell(35, $lh, $space . " ", 0, 0, L);
@@ -102,8 +102,8 @@ class PDF extends tFPDF {
 
     $x = $this->GetX(); $y = $this->GetY(); // Remember position
 
-    $this->SetXY(30, $y + 1);
-    $this->SetFontSize($textsize); $this->MultiCell(70, $lh - 2, $customer['cu_address'], 0,L); $this->SetFontSize($defaultsize);
+    $this->SetXY(27, $y + 1);
+    $this->SetFontSize($textsize); $this->MultiCell(73, $lh - 2, $customer['cu_address'], 0,L); $this->SetFontSize($defaultsize);
 
     $this->SetXY($x, $y);
     $x = $this->GetX(); $y = $this->GetY(); // Remember position
@@ -122,11 +122,11 @@ class PDF extends tFPDF {
     $this->Cell(35, $lh, $space . " ", 0, 0, L);
     $this->SetFontSize($textsize); $this->Cell(55, $lh, $customer['cu_termpayment'], 0, 1, L); $this->SetFontSize($defaultsize);
 
-    $this->Cell(25, $lh, $space . " ", 0, 0, L);
-    $this->SetFontSize($textsize); $this->Cell(25, $lh, $customer['cu_contact'], '', 0, L); $this->SetFontSize($defaultsize);
+    $this->Cell(22, $lh, $space . " ", 0, 0, L);
+    $this->SetFontSize($textsize); $this->Cell(28, $lh, $customer['cu_contact'], '', 0, L); $this->SetFontSize($defaultsize);
 
-    $this->Cell(20, $lh, $space . " ", '', 0, L);
-    $this->SetFontSize($textsize); $this->Cell(40, $lh, $customer['cu_phone'], 0, 0, L); $this->SetFontSize($defaultsize);
+    $this->Cell(25, $lh, $space . " ", '', 0, L);
+    $this->SetFontSize($textsize); $this->Cell(35, $lh, $customer['cu_phone'], 0, 0, L); $this->SetFontSize($defaultsize);
 
 
     $this->Cell(35, $lh, $space . "  ", 0, 0, L);
