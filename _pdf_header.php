@@ -14,16 +14,16 @@ $this->SetY(5);
 $this->SetFontSize(22);
 if ($company == 1) {
   $this->Cell(25);
-  $this->Cell(30, 5, 'มิตรมงคล/MITMONGKOL', 0, 1, 'L');
+  $this->Cell(30, 5, 'มิตรมงคล/MITMONGKOL ( สำนักงานใหญ่ )', 0, 1, 'L');
   $this->Ln();
 } else if ($company == 2) {
   $this->Cell(80);
-  $this->Cell(30, 5, 'มงคลทวีทรัพย์/MONGKOLTAWEESUP', 0, 1, 'C');
+  $this->Cell(30, 5, 'มงคลทวีทรัพย์/MONGKOLTAWEESUP ( สำนักงานใหญ่ )', 0, 1, 'C');
   $this->Ln();
 } else if ($company == 3) {
   $this->SetFontSize(18);
   $this->Cell(25);
-  $this->Cell(30, 5, 'บริษัท มิตรมงคล อีควิปเม้นท์ เรนทัล จำกัด', 0, 1, 'L');
+  $this->Cell(30, 5, 'บริษัท มิตรมงคล อีควิปเม้นท์ เรนทัล จำกัด ( สำนักงานใหญ่ )', 0, 1, 'L');
   $this->Cell(25);
   $this->Cell(30, 5, 'Mitmongkol Equipment Rental Co.,Ltd', 0, 1, 'L');
   $this->Ln(1);
